@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import CircularDisplay from './circular_display';
+// import getMessage from './getMessage'
 
 const StyledTab = styled.div`
   max-width: ${props => props.theme.maxWidth};
@@ -121,7 +122,9 @@ class PlantTabs extends React.Component {
 
         <TabPanels>
           <TabPanel>
-            <CircularDisplay type="sunlight" percentage={34} text="Sunlight"/>
+            <CircularDisplay type="sunlight" percentage={34} text="Sunlight" 
+            // message={getMessage}
+            />
             <CircularDisplay type="humidity" percentage={30} text="Humidity"/>
           </TabPanel>
           <TabPanel>

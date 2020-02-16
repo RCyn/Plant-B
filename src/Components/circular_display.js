@@ -73,6 +73,7 @@ class CircularProgressBar extends React.Component {
   state = {type: this.props.type};
 
   render() {
+    // const percentage = this.props.message ? this.props.message : this.props.percentage;
     // Size of the enclosing square
     const sqSize = this.props.sqSize;
     // SVG centers the stroke width on the radius, subtract out so circle fits in square
@@ -110,12 +111,6 @@ class CircularProgressBar extends React.Component {
                 strokeDasharray: dashArray,
                 strokeDashoffset: dashOffset
               }} />
-            {/* <circle
-              className="circle-progress"
-              cx={this.props.sqSize / 2 + Math.cos(this.props.percentage * Math.PI * 2) * radius}
-              cy={this.props.sqSize / 2 + Math.sin(this.props.percentage * Math.PI * 2) * radius}
-              r={2}
-              strokeWidth={`${this.props.strokeWidth}px`} /> */}
             <text
               className="circle-text"
               x="50%"
@@ -130,11 +125,11 @@ class CircularProgressBar extends React.Component {
   }
 }
 
-CircularProgressBar.defaultProps = {
-  sqSize: 200,
-  percentage: 25,
-  strokeWidth: 10
-};
+// CircularProgressBar.defaultProps = {
+//   sqSize: 200,
+//   percentage: 25,
+//   strokeWidth: 10
+// };
 
 class CircularDisplay extends React.Component {
   state = {
@@ -157,7 +152,9 @@ class CircularDisplay extends React.Component {
           type={this.props.type}
           strokeWidth="20"
           sqSize="275"
-          percentage={this.props.percentage}/>
+          percentage={this.props.percentage}
+          // message={this.props.message}
+          />
         <p>{this.props.text}</p>
       </StyledDisplay>
     );

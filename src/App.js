@@ -1,6 +1,6 @@
 import React from "react";
+
 import Page from "./Components/page";
-import Header from "./Components/header"
 import PlantTabs from "./Components/plant_tabs";
 import "./App.css";
 
