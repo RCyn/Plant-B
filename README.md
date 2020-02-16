@@ -10,18 +10,18 @@ The plant pot will move and rotate the plant to ideal places in the room to opti
 
 #### Software
 
-Front-end: *React*
+Front-end: **React**
 
-Back-end: *Solace*, *C++*
+Back-end: **Solace**, **C++**
 
 #### Hardware
 
-*Qualcomm dev kit*:
+**Qualcomm dev kit**:
 
 - Qualcomm Dragonboard
 - sensors:
 
-*3D printed plant pot*
+**3D printed plant pot**
 
 ## Set-up
 
