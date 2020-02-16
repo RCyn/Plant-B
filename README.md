@@ -18,8 +18,11 @@ Back-end: **Solace**, **C++**
 
 **Qualcomm dev kit**:
 
-- Qualcomm Dragonboard
+- Qualcomm Dragonboard 410c
 - sensors:
+  - light sensors
+  - temperature and humidity sensors
+  - rotary motor
 
 **3D printed plant pot**
 
